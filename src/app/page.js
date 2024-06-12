@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import '../app/globals.css';
+import './globals.css';
 import Hero from '@/components/Hero';
 import Skills from '@/components/Skills';
 import GetStarted from '@/components/GetStarted';
