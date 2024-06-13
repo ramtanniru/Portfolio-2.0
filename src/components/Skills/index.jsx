@@ -1,5 +1,5 @@
 import React from 'react'
-import { services, skills } from '../../../data'
+import { services, skills } from '../../utils/data'
 import Card2 from './Card2'
 
 const Skills = () => {
@@ -28,16 +28,6 @@ const Skills = () => {
             <h6 className='text-[#F37B22] dark:text-white text-[14px] tracking-[1.68px]'>SERVICES</h6>
             <h1 className='text-[#1F2937] dark:text-white text-3xl md:text-[36px] font-bold'>How I Can Help You With</h1>
             <ul className='flex flex-col md:flex-row gap-10 mt-3'>
-                {/* {services.map(key=>(
-                    <li className='flex flex-col w-full md:w-1/4 gap-3 bg-white dark:bg-black shadow-solid-5 dark:shadow-2xl px-4 py-5 rounded-lg mt-3' key={key}>
-                        <div className='font-semibold text-[#1F2937] dark:text-white'>{key.name}</div>
-                        <div className='flex flex-wrap gap-5'>
-                            <div className='text-[#1F2937] dark:text-[#ffffff] rounded-md'>
-                              {key.description}
-                            </div>
-                        </div>
-                    </li>
-                ))} */}
                 {
                     services.map(key=>(
                         <Card2 services={key}/>
