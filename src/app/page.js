@@ -5,6 +5,8 @@ import Skills from '@/components/Skills';
 import GetStarted from '@/components/GetStarted';
 import Coding from '@/components/Coding';
 import Projects from '@/components/Projects';
+import Achievements from '@/components/Achievements';
+import Contact from '@/components/Contact';
 export default function Home() {
   return (
     <main>
@@ -13,6 +15,8 @@ export default function Home() {
       <GetStarted/>
       <Coding/>
       <Projects/>
+      <Achievements/>
+      <Contact/>
     </main>
   );
 }
