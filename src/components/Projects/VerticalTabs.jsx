@@ -44,7 +44,7 @@ export default function VerticalTabs() {
           }>
             <Card className='w-full rounded-none'>
               <CardBody className='w-full gap-15 justify-between bg-[#1F2937] items-center rounded-none text-white'>
-                <div className="w-full flex flex-wrap justify-around gap-10">
+                <div className="w-full flex flex-wrap justify-start gap-10">
                   {projects['web'].map((key)=>(
                     <Card5 name={key.name} src={key.src} link={key.link} key={key}/>
                   ))}
@@ -59,7 +59,7 @@ export default function VerticalTabs() {
           }>
             <Card className='w-full rounded-none'>
               <CardBody className='w-full gap-15 justify-between bg-[#1F2937] items-center rounded-none text-white'>
-                <div className="w-full flex flex-wrap justify-around gap-10">
+                <div className="w-full flex flex-wrap justify-start gap-10">
                   {projects['app'].map((key)=>(
                     <Card5 key={key} name={key.name} src={key.src} link={key.link}/>
                   ))}
