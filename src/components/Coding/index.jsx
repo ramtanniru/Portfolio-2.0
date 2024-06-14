@@ -13,7 +13,7 @@ const Coding = () => {
             <div className='flex flex-col md:flex-row justify-center gap-15 items-center mt-5'>
                 {
                     codingPlatforms.map((obj)=>(
-                        <Card3 name={obj.name} src={obj.src} link={obj.link}/>
+                        <Card3 name={obj.name} src={obj.src} link={obj.link} key={obj}/>
                     ))
                 }
             </div>
@@ -24,7 +24,7 @@ const Coding = () => {
             <div className='w-full flex flex-col md:flex-row justify-between gap-15 items-center mt-5'>
                 {
                     certifications.map((obj)=>(
-                        <Card4 name={obj.name} src={obj.src} link={obj.link}/>
+                        <Card4 name={obj.name} src={obj.src} link={obj.link} key={obj}/>
                     ))
                 }
             </div>

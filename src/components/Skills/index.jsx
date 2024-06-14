@@ -15,7 +15,7 @@ const Skills = () => {
                         <div className='font-semibold text-[#1F2937] dark:text-white'>{key}</div>
                         <div className='flex flex-wrap gap-5'>
                             {skills[key].map(i=>(
-                                <div className='p-2 text-[#1F2937] dark:text-[#ffffff] bg-[#FFE8C8] dark:bg-[#14131a] rounded-md'>
+                                <div key={i} className='p-2 text-[#1F2937] dark:text-[#ffffff] bg-[#FFE8C8] dark:bg-[#14131a] rounded-md'>
                                     {i}
                                 </div>
                             ))}
@@ -30,7 +30,7 @@ const Skills = () => {
             <ul className='flex flex-col md:flex-row gap-10 mt-3'>
                 {
                     services.map(key=>(
-                        <Card2 services={key}/>
+                        <Card2 services={key} key={key}/>
                     ))
                 }
             </ul>

@@ -11,7 +11,7 @@ const Achievements = () => {
             <h1 className='text-[#1F2937] dark:text-white text-3xl md:text-[36px] font-bold'>Achievements</h1>
             <div className='flex flex-col justify-center gap-5 items-center mt-5'>
                 {awards.map((key=>(
-                        <Card6 name={key.name} prize={key.prize} src={key.src} clubIcon={key.clubIcon} date={key.date} />
+                        <Card6 key={key} name={key.name} prize={key.prize} src={key.src} clubIcon={key.clubIcon} date={key.date} />
                 )))}
             </div>
         </div>
