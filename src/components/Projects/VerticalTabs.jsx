@@ -31,7 +31,7 @@ export default function VerticalTabs() {
               <CardBody className='w-full gap-15 justify-between bg-[#1F2937] items-center rounded-none text-white'>
                 <div className="w-full flex flex-wrap justify-around gap-10">
                   {projects['ui/ux'].map((key)=>(
-                    <Card5 name={key.name} src={key.src} link={key.link}/>
+                    <Card5 name={key.name} src={key.src} link={key.link} key={key}/>
                   ))}
                 </div>
               </CardBody>
@@ -46,7 +46,7 @@ export default function VerticalTabs() {
               <CardBody className='w-full gap-15 justify-between bg-[#1F2937] items-center rounded-none text-white'>
                 <div className="w-full flex flex-wrap justify-around gap-10">
                   {projects['web'].map((key)=>(
-                    <Card5 name={key.name} src={key.src} link={key.link}/>
+                    <Card5 name={key.name} src={key.src} link={key.link} key={key}/>
                   ))}
                 </div>
               </CardBody>

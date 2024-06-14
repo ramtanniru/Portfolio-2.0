@@ -18,8 +18,8 @@ const GetStarted = () => {
                 <Button text={"Hire Me"} />
               </div>
             </div>
-            <div className="text-[#391400A3] text-base md:text-lg md:w-1/3 md:text-center md:text-left">
-              Put themselves in the merchant's shoes. It is meant to partner on the long run.
+            <div className="text-[#391400A3] text-base md:text-lg md:w-1/3 md:text-center">
+              Put themselves in the merchant{`'`}s shoes. It is meant to partner on the long run.
             </div>
             <div className="flex justify-center items-baseline">
               <Image src='/images/assets/cards.svg' alt="Cards Icon" height={250} width={300} />
